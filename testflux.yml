@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+    - name: "Flux web "
+      wait_for:
+          host: "{{ item }}"
+          port: 443
+          state: started
+          timeout: 5
+          
+      with_items: " {{ groups['web'] }}"

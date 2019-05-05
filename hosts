@@ -1,0 +1,6 @@
+[rec]
+192.168.99.101 ansible_user=root
+[web]
+google.fr
+yahoo.fr
+docs.ansible.com
